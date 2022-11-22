@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body{
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8052ec,#d161ff);
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 100%;
+  max-width: 336px;
+ background-color: white;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.style-up {
+  width: 336px;
+  height: 28px;
+  background: #ffdc40;
+}
+.card h1 {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+  margin-top: 17px;
+  margin-bottom: 42px;
+}
+.fa-arrow-up-wide-short{
+  position: absolute;
+  right: 30px;
+  top: 90px;
+cursor: pointer;
+  width: 15px;
+  height: 10px;
+ 
+  color: #C4C4C4;
+  transform: rotate(-180deg);
+}
+.form-task{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 286px;
+    margin: 0 auto;
+}
+.form-task .form {
+  width: 286px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid #c4c4c4;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 18px !important;
+}
+.form input {
+  width: 90%;
+  outline: none;
+  border: none;
+  display: inline-block;
+}
+.delete-input {
+    width: 20px;
+height: 20px;
+border: 1px solid #C4C4C4;
+border-radius: 71px;
+background-color: white;
+color: #C4C4C4;
+cursor: pointer;
+}
+
+.form-task .add{
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 150px;
+height: 42px;
+background: #833AE0;
+border-radius: 71px;
+border: none;
+outline: none;
+color: white;
+cursor: pointer;
+}
+.card ul{
+width: 286px;
+border-radius: 10px;
+border: 1px solid #C4C4C4;
+margin: 0 auto;
+padding: 10px 27px;
+list-style-type: none;
+margin-bottom: 15px;
+display: none;
+}
+.task-list .list:not(:first-child){
+margin-top:20px ;
+}
+.task-list .list{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.list .delete{
+    width: 20px;
+height: 20px;
+border: 1px solid #C4C4C4;
+border-radius: 71px;
+background-color: white;
+color: #C4C4C4;
+cursor: pointer;
+}
